@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+.card-body{
+    border: 1px solid black;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 400;
+    padding: 4rem;
+    color: whitesmoke;
+    background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+}
+.card-btn{
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+}
+.card-btn button{
+    width: 8.5rem;
+    height: 3rem;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    transition-timing-function:ease-in;
+    transition-duration: 0.5s;
+}
+.card-btn button:hover{
+    /* background-color: #E4E4E1;
+    background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
+ 	background-blend-mode: normal, multiply; */
+
+     background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+     background-blend-mode: multiply,multiply;
+
+
+    color: whitesmoke;
+    transform: scale(1.05);
+}
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .card-body {
+        font-size: 3rem; /* Adjust font size for mobile screens */
+        padding: 0.5rem; /* Adjust padding for mobile screens */
+    }
+
+    .card-btn {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        padding: 0.5rem; /* Adjust padding for mobile screens */
+        gap: 0.5rem; /* Adjust gap for mobile screens */
+    }
+
+    .card-btn button {
+        width: 5.5rem; /* Adjust button width for mobile screens */
+        height: 2.5rem; /* Adjust button height for mobile screens */
+        font-size: 0.8rem; /* Adjust font size for mobile screens */
+    }
+}
